@@ -10,7 +10,7 @@
 
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #5174aaa1;
+    background: linear-gradient(120deg, #85d8ff, #4f6cbb);
     color: #333;
 }
 
@@ -38,7 +38,9 @@ body {
    ========================= */
 
 .section {
-    background-color: rgb(238, 201, 121);
+    /* background-color: rgb(238, 201, 121); */
+    background: linear-gradient(30deg, #ffc685, #f0dd73);
+
 
     border-radius: 12px;
     padding: 25px;
