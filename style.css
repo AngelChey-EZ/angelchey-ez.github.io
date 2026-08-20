@@ -1,0 +1,250 @@
+/* =========================
+   General
+   ========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #5174aaa1;
+    color: #333;
+}
+
+
+/* =========================
+   Main Layout
+   ========================= */
+
+.page-container {
+    display: grid;
+
+    /* Left | Center | Right */
+    grid-template-columns: 1fr 2fr 1fr;
+
+    gap: 20px;
+
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+
+/* =========================
+   Sections
+   ========================= */
+
+.section {
+    background-color: rgb(238, 201, 121);
+
+    border-radius: 12px;
+    padding: 25px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================
+   Achievements
+   ========================= */
+
+.achievements h2 {
+    margin-bottom: 20px;
+}
+
+.achievement {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.achievement:last-child {
+    border-bottom: none;
+}
+
+.achievement h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.achievement p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   Profile
+   ========================= */
+
+.profile {
+    text-align: center;
+}
+
+.profile-image {
+    width: 80%;
+    border-radius: 10%;
+    margin-bottom: 20px;
+}
+
+.profile h1 {
+    margin-bottom: 10px;
+}
+
+.profile-description {
+    color: #666;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+.profile-info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.profile-info h2 {
+    margin-bottom: 15px;
+}
+
+.profile-info p {
+    margin-bottom: 10px;
+}
+
+/* Button */
+.social-button {
+    margin-top: 30px;
+    padding: 12px 24px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #66ff00;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+}
+
+.social-button:hover{
+    background: #e6f08f;
+}
+
+/* Jump animation */
+.social-button.jump {
+    animation: jump 0.5s ease;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-100px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    70% {
+        transform: translateY(-40px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.social-button:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   Highlights
+   ========================= */
+
+.highlights h2 {
+    margin-bottom: 20px;
+}
+
+.highlight-link {
+    display: block;
+
+    padding: 12px;
+    margin-bottom: 10px;
+
+    background-color: #f0f0f0;
+
+    color: #333;
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    transition: background-color 0.2s ease;
+}
+
+.highlight-link:hover {
+    background-color: #ddd;
+}
+
+/* 
+Tennis ball
+*/
+.tennis-ball {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 40px;        
+    left: 310px;
+    font-size: 30px;
+}
+
+
+/* Bounce animation */
+.tennis-ball.bounce {
+    animation: tennisBounce 0.8s ease-out;
+}
+
+@keyframes tennisBounce {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    30% {
+        transform: translateY(-50px) rotate(120deg);
+    }
+
+    55% {
+        transform: translateY(0) rotate(240deg);
+    }
+
+    75% {
+        transform: translateY(-20px) rotate(300deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(360deg);
+    }
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .page-container {
+        grid-template-columns: 1fr;
+    }
+
+}
