@@ -52,6 +52,7 @@ h1 {
   padding: 5px 10px;
   color: white;
   margin: 10px 10px;
+  cursor: pointer;
 }
 .buy-tickets {
   background-color: chartreuse;
