@@ -1,5 +1,6 @@
 body {
   background-color: antiquewhite;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container {
@@ -37,8 +38,8 @@ h1 {
 #chey,
 #emoji {
   position: absolute;
-  font-size: 10em;
-  top: -50px;
+  font-size: 7vw;
+  top: -20%;
 
   opacity: 0;
   transition: all 0.3s ease-in-out;
@@ -62,4 +63,28 @@ h1 {
   top: 0;
   transform: translate(0, 50%); /* Centers the emoji perfectly */
   opacity: 1;
+}
+
+#biography {
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px 50px;
+  margin: 20px auto;
+  width: 80%;
+  font-size: larger;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(0, 128, 128, 0.664);
+}
+
+#travel-destination{
+  margin: 50px auto;
+}
+
+iframe{
+  display: block;
+  width:60vw;
+  aspect-ratio: 16/9;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
 }
